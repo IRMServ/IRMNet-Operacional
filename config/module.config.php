@@ -1,5 +1,5 @@
 <?php
-
+namespace Operacional;
 /**
  * Zend Framework (http://framework.zend.com/)
  *
@@ -8,6 +8,16 @@
  * @license   http://framework.zend.com/license/new-bsd New BSD License
  */
 return array(
+      'acl' => array(
+        'Operacional' => array(
+            'OPERACIONAL - OFFSHORE' => array(
+                'Operacional\Controller\Index:index',              
+            ),
+            'TI' => array(
+                'Operacional\Controller\Index:index',              
+            ),
+        )
+    ),
     'router' => array(
         'routes' => array(
             // This defines the hostname route which forms the base
